@@ -1,0 +1,33 @@
+.modeling__btn {
+  height: 56px;
+  width: 280px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-color);
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+}
+
+.modeling-work__item {
+  display: flex;
+  align-items: center;
+  &::before {
+    display: block;
+    content: '';
+    width: 7px;
+    height: 7px;
+
+    margin-right: 10px;
+    background: #487996;
+    border-radius: 3px 0px;
+  }
+}
