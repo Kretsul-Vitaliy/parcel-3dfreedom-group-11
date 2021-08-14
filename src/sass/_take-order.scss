@@ -15,10 +15,24 @@
 .take-order__text {
 }
 .text {
+  @include fontStyle(18px, 23px, var(--text-color), 0.06em, 300);
+  font-family: var(--secondary-font);
+  font-style: normal;
+}
+.text-second {
+  @include fontStyle(18px, 23px, var(--text-color), 0.06em, 400);
+  font-family: var(--secondary-font);
+  font-style: normal;
+}
+.text-first {
+  @include fontStyle(18px, 20px, var(--text-color), 0.06em, 400);
+  font-family: var(--main-font);
+  font-style: normal;
 }
 .take-order__subtitle {
 }
 .take-order__form {
+  width: 515px;
 }
 .take-order__row-box {
 }
@@ -26,6 +40,62 @@
 }
 .bar {
 }
+.select-wrapper {
+  position: relative;
+  // стилизация стрелочки
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    display: block;
+
+    // width: 10px;
+    // height: 10px;
+    // background-color: var(--text-color);
+
+    // снимаем клик с треугольника
+    pointer-events: none;
+    // рисуем треугольник
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 9.5px 0 9.5px;
+    border-color: #2b2b2b transparent transparent transparent;
+  }
+}
+
+.select {
+  //   растягиваем блок на 100% родительского блока
+  width: 100%;
+  // убираем браузерную стрелку
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  // задаем свой фон и рамку
+  border: none;
+  background: transparent;
+  //   background: rgba(72, 121, 150, 0.5);
+  // отступы от рамки к тексту
+  padding: 10px 35px 4px 2px;
+
+  //   убираем браузерную обводку
+  outline: none;
+
+  // стилизация курсора
+  cursor: pointer;
+  &::-ms-expand {
+    display: none;
+  }
+  //   &:hover {
+  //     background-color: red;
+  //     color: yellowgreen;
+  //   }
+}
+
 .take-order__commit {
 }
 .modal-form__comment {
@@ -33,4 +103,16 @@
 .fa {
 }
 .fa-paperclip {
+}
+
+/* Target Internet Explorer 9 to undo the custom arrow */
+// @media screen and (min-width: 0\0) {
+//   select {
+//     background-image: none\9;
+//     padding: 5px\9;
+//   }
+
+.contact__box-img {
+  width: 530px;
+  height: 325px;
 }
