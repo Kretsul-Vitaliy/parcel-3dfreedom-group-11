@@ -9,6 +9,8 @@
 @import './utils/variable';
 @import './utils/mixins';
 @import './utils/_visually-hidden';
+@import './base';
+@import './container';
 @import './main-page';
 @import './header';
 @import './hero';
@@ -18,4 +20,5 @@
 @import './3d-printing';
 @import './take-order';
 @import './contacts';
+@import './footer';
 // @import './example'
