@@ -1,34 +1,31 @@
+.scanning__paragraph {
+  min-height: 200px;
+  background-image: url(../images/3D-scanning/backgraund_m.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 24px;
+}
+
 .scanning__title {
-  font-family: var(-main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 1.23;
+  margin-bottom: 17px;
 
-  color: var(--title-color);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 25px;
+  }
 }
-.scanning__text {
-  font-family: var(--secondary-font);
-  color: var(--text-color);
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.scanning__btn {
-  height: 56px;
-  width: 280px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--title-color);
 
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30.5px;
+.scanning__title {
+  margin-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 52px;
+  }
+}
+
+.scanning__list {
+  margin-bottom: 52px;
 }
