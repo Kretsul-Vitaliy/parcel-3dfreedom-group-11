@@ -26,17 +26,35 @@
   margin-bottom: 16px;
 }
 .modeling-foto__title {
+  max-width: 280px;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
+    max-width: 600px;
     margin-bottom: 24px;
   }
   @media screen and (min-width: 1444px) {
+    max-width: 842px;
     margin-bottom: 52px;
   }
 }
 .modeling__text {
+  line-height: 1.28;
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 515px;
+  }
+  @media screen and (min-width: 1444px) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+  }
+}
+.hero-text {
+  @media screen and (min-width: 1444px) {
+    display: flex;
   }
 }
 .modeling-container {
@@ -91,6 +109,20 @@
   @media screen and (min-width: 1444px) {
     &:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+}
+.modeling-images {
+  background-image: url(../images/3d-modeling/pic/pic-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-position: center;
+  width: 280px;
+  height: 164px;
+  margin-top: 32px;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .modeling-images {
+      background-image: url(../images/3d-modeling/pic/pic-mobile@2x.jpg);
     }
   }
 }
