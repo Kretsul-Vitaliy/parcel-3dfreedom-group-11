@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/gallery/gallery-morephoto-5.jpg":[["gallery-morephoto-5.d0ed6f3f.jpg","m1B7"],"m1B7"]}],"hGbe":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["hGbe"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/contacts-page.28248075.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/contacts-page.9bc9efcc.js.map

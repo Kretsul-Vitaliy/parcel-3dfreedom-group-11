@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/gallery/gallery-morephoto-5.jpg":[["gallery-morephoto-5.d0ed6f3f.jpg","m1B7"],"m1B7"]}],"isWM":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["isWM"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/3d-printing-page.88442d63.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/3d-printing-page.263fe02a.js.map
