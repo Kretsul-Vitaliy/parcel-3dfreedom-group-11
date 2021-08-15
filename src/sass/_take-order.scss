@@ -7,6 +7,40 @@
 .title {
 }
 .take-order__box-img {
+  background-image: url(../images/take-order/take-order-pictures-mbl.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  // max-width: 280px;
+  height: 171px;
+  //mobile retina
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/take-order/take-order-pictures-mbl@2x.jpg);
+  }
+  //Tablet
+  @media screen and (min-width: 481px) {
+    // width: 247px;
+    height: 116px;
+    background-size: auto;
+    background-image: url(../images/take-order/take-order-pictures-tbl.jpg);
+    //Tablet retina
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/take-order-pictures-mbl@2x.jpg);
+    }
+  }
+  //Desktop
+  @media screen and (min-width: 769px) {
+    // width: 515px;
+    height: 315px;
+    background-size: auto;
+    background-image: url(../images/take-order/take-order-pictures.jpg);
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    //Desktop retina
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/take-order-pictures@2x.jpg);
+    }
+  }
 }
 .take-order__image {
 }
@@ -15,9 +49,15 @@
 .take-order__text {
 }
 .text {
-  @include fontStyle(18px, 23px, var(--text-color), 0.06em, 300);
+  @include fontStyle(16px, 23px, var(--text-color), 0.06em, 300);
   font-family: var(--secondary-font);
   font-style: normal;
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 .text-second {
   @include fontStyle(18px, 23px, var(--text-color), 0.06em, 400);
@@ -28,6 +68,54 @@
   @include fontStyle(18px, 20px, var(--text-color), 0.06em, 400);
   font-family: var(--main-font);
   font-style: normal;
+}
+.take-order__list-item {
+  //Desktop
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 769px) {
+    display: flex;
+  }
+}
+.take-order__item-one {
+  //Desktop
+  @media screen and (min-width: 769px) {
+    height: 144px;
+    width: 144px;
+    background-size: auto;
+    background-image: url(../images/take-order/take-order-pictures-2.jpg);
+    //Desktop retina
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/take-order-pictures-2@2x.jpg);
+    }
+  }
+}
+.take-order__item-two {
+  //Desktop
+  @media screen and (min-width: 769px) {
+    height: 144px;
+    width: 144px;
+    background-size: auto;
+    background-image: url(../images/take-order/take-order-pictures-3.jpg);
+    //Desktop retina
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/take-order-pictures-3@2x.jpg);
+    }
+  }
+}
+.take-order__item-three {
+  //Desktop
+  @media screen and (min-width: 769px) {
+    height: 144px;
+    width: 144px;
+    background-size: auto;
+    background-image: url(../images/take-order/take-order-pictures-4.jpg);
+    //Desktop retina
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/take-order-pictures-4@2x.jpg);
+    }
+  }
 }
 .take-order__subtitle {
 }
@@ -105,14 +193,13 @@
 .fa-paperclip {
 }
 
-/* Target Internet Explorer 9 to undo the custom arrow */
-// @media screen and (min-width: 0\0) {
-//   select {
-//     background-image: none\9;
-//     padding: 5px\9;
-//   }
-
 .contact__box-img {
-  width: 530px;
-  height: 325px;
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 769px) {
+    display: block;
+    width: 530px;
+    height: 325px;
+  }
 }
