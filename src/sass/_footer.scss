@@ -90,6 +90,14 @@
     align-items: baseline;
     justify-content: space-around;
     margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .container__navigation {
+    flex-basis: 100%;
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 19px;
   }
 
   .container__menu,
@@ -107,9 +115,15 @@
 
 @media screen and (min-width: 1444px) {
   .container-general {
-    display: flex;
-    align-items: baseline;
     justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .container__navigation {
+    flex-basis: auto;
+    flex-grow: 0;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
 
   .logo__icon {
