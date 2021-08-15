@@ -87,3 +87,16 @@
     font-size: 18px;
   }
 }
+.buttons {
+  font-family: 'Cera Pro' sans-serif;
+  font-weight: 700;
+  width: 277px;
+  align-items: center;
+  color: var(--title-color);
+  background: var(--button-color);
+  box-shadow: -10px -10px 20px #FFFFFF,
+  10px 10px 20px rgba(72, 121, 150, 0.1),
+  5px 5px 10px rgba(72, 121, 150, 0.25),
+  -5px -5px 10px #FFFFFF;
+  border-radius: 30.5px;
+}
