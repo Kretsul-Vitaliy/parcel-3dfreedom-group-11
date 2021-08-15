@@ -104,6 +104,8 @@
   @media screen and (min-width: 769px) {
     height: 144px;
     width: 144px;
+    border-radius: 0px 72px 72px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     background-size: auto;
     background-image: url(../images/take-order/take-order-pictures-2.jpg);
     //Desktop retina
@@ -117,6 +119,8 @@
   @media screen and (min-width: 769px) {
     height: 144px;
     width: 144px;
+    border-radius: 72px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     background-size: auto;
     background-image: url(../images/take-order/take-order-pictures-3.jpg);
     //Desktop retina
@@ -130,6 +134,8 @@
   @media screen and (min-width: 769px) {
     height: 144px;
     width: 144px;
+    border-radius: 0px 0px 72px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
     background-size: auto;
     background-image: url(../images/take-order/take-order-pictures-4.jpg);
     //Desktop retina
@@ -142,6 +148,9 @@
 .wrapper-box {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 100px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 .wrapper-box2 {
   // display: flex;
@@ -225,9 +234,11 @@
 }
 
 .take-order__box-info {
+  text-align: right;
 }
 
 .contact__box-img {
+  margin-top: 100px;
   @media screen and (min-width: 320px) {
     display: none;
   }
@@ -257,6 +268,20 @@
 
 .take-order__info-text {
   margin-bottom: 42px;
+  &:first-child {
+    margin-top: 30px;
+  }
+}
+.contact__link-order {
+  // margin-bottom: 18px;
+  // background-color: red;
+  &:not(:first-child) {
+    margin-top: 18px;
+  }
+  li {
+    margin-bottom: 18px;
+    // background-color: red;
+  }
 }
 .line-label {
   border-bottom: 1px solid #487996;
