@@ -6,6 +6,42 @@
   margin-bottom: 24px;
 }
 
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .scanning__paragraph {
+    background-image: url(../images/3D-scanning/backgraund_m@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scanning__paragraph {
+    background-image: url(../images/3D-scanning/backgraund_t.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .scanning__paragraph {
+    background-image: url(../images/3D-scanning/backgraund_t@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scanning__paragraph {
+    background-image: url(../images/3D-scanning/backgraund_d.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .scanning__paragraph {
+    background-image: url(../images/3D-scanning/backgraund_d@2x.jpg);
+  }
+}
+
 .scanning__title {
   margin-bottom: 17px;
 
@@ -28,4 +64,48 @@
 
 .scanning__list {
   margin-bottom: 52px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 100px;
+  }
 }
+
+.scanning__btn {
+  margin-bottom: 76px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 100px;
+  }
+}
+
+.scanning__signature {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: #487996;
+}
+
+.scanning__item {
+  width: 130px;
+  height: 180px;
+  padding-top: 115px;
+  padding-bottom: 21px;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+}
+
+// .scanning__item::before {
+//   display: block;
+//   content: '';
+//   height: 118px;
+//   border-radius: 100px 100px 100px 50px;
+
+//   background: #ffffff;
+//   background-image: url(../images/3D-scanning/first_m.jpg);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+
+//   background-position: center;
+//   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
+//   border-radius: 50px 0px;
+// }
