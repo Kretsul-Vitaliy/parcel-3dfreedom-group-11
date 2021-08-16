@@ -86,26 +86,22 @@
 }
 
 .scanning__item {
+  display: block;
   width: 130px;
   height: 180px;
+  // background-position: top;
+
   padding-top: 115px;
   padding-bottom: 21px;
   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
 }
 
-// .scanning__item::before {
-//   display: block;
-//   content: '';
-//   height: 118px;
-//   border-radius: 100px 100px 100px 50px;
-
-//   background: #ffffff;
-//   background-image: url(../images/3D-scanning/first_m.jpg);
-//   background-repeat: no-repeat;
-//   background-size: contain;
-
-//   background-position: center;
-//   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
-//   border-radius: 50px 0px;
-// }
+.scanning__signature::before {
+  display: block;
+  content: '';
+  height: 80px;
+  background-image: url(../images/3D-scanning/first_m.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
