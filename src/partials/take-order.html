@@ -1,77 +1,128 @@
 <section class="take-order container">
 <h2 class="take-order__title title">ЗРОБИТИ ЗАМОВЛЕННЯ</h2>
-<div>
+<div class="take-order__box-flex">
     <div class="take-order__box-img">
-    <img class="take-order__image" src="" alt="gallery image">
+    <!-- <img class="take-order__image" src="" alt="gallery image"> -->
     </div>
-    <div class="take-order__box-text">
-        <p class="take-order__text text">
-            На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з вами.
-        </p>
-        <p class="take-order__text text">
-            Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на всі ваші запитання.
-        </p>
+   <div class="take-order__flex">
+        <div class="take-order__box-text">
+            <p class="take-order__text">
+                На цій сторінці ви можете зробити замовлення заповнивши форму і ми зв'яжемося з вами.
+            </p>
+            <p class="take-order__text">
+                Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть відповідь на всі ваші запитання.
+            </p>
+        </div>
+        <!-- <img src="" alt="mashine">
+        <img src="" alt="tubus">
+        <img src="" alt="lamp"> -->
+        <ul class="take-order__list-item">
+            <li class="take-order__item take-order__item-one"></li>
+            <li class="take-order__item take-order__item-two"></li>
+            <li class="take-order__item take-order__item-three"></li>
+        </ul>
     </div>
-    <img src="" alt="mashine">
-    <img src="" alt="tubus">
-    <img src="" alt="lamp">
 </div>
-<div>
-    <h3 class="take-order__subtitle">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
-    <form class="take-order__form" name="form1" action="" method="POST" autocomplete="off">
-        <div class="take-order__row-box">
-            <input class="take-order__input" id="name" type="text" minlength="2" maxlength="25" autofocus placeholder="Олексій" required>
-            <span class="bar"></span>
-            <label>Ім’я</label>
+<div class="wrapper-box3">
+    <div class="wrapper-box">
+        <div class="wrapper-box2">
+            <h3 class="take-order__subtitle title_second">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+            <div> <form class="take-order__form" name="form1" action="" method="POST" autocomplete="off">
+                <div class="group take-order__row-box">
+                    <input class="take-order__input" id="name" type="text" minlength="2" maxlength="25" autofocus required>
+                    <span class="bar"></span>
+                    <label class="take-order__label text-second">Ім’я</label>
+                </div>
+                
+                <div class="group take-order__row-box">
+                    <input class="take-order__input" id="email" type="email" required>
+                    <span class="bar"></span>
+                    <label class="take-order__label text-second">Email</label>
+                </div>
+                <div class="take-order__row-box">
+                    <div class="select-wrapper">
+                        <select class="select text-second line-label" name="select-category-type">
+                            <!-- <span class="bar"></span> -->
+                            <option class="select__option" value="type-plastic">Види пластика</option>
+                            <option class="select__option" value="ABS">ABS (АБС)</option>
+                            <option class="select__option" value="PLA">PLA (ПЛА)</option>
+                            <option class="select__option" value="PVA">PVA (ПВА)</option>
+                            <option class="select__option" value="Nylone">Nylone (Нейлон)</option>
+                            <option class="select__option" value="HIPS">HIPS (Ударостійкий полістирол)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="take-order__row-box">
+                    <div class="select-wrapper">
+                        <select class="select text-second line-label" name="select-category-quality">
+                            <!-- <span class="bar"></span> -->
+                            <option class="select__option" selected value="quality-print">Якість друку</option>
+                            <option class="select__option" value="300µm">300 мікрон</option>
+                            <option class="select__option" value="200µm">200 мікрон</option>
+                            <option class="select__option" value="100µm">100 мікрон</option>
+                            <option class="select__option">Труднощі у виборі - ми допоможемо</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="take-order__row-box">
+                    <div class="select-wrapper">
+                        <select class="select text-second line-label" name="select-category-color">
+                            <!-- <span class="bar"></span> -->
+                            <option class="select__option" selecter value="color">Колір</option>
+                            <option class="select__option" value="red">Червоний</option>
+                            <option class="select__option" value="white">Білий</option>
+                            <option class="select__option" value="black">Чорний</option>
+                            <option class="select__option" value="yellow">Жовтий</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="take-order__commit">
+                    <label class="text-second">Повідомлення</label>
+                    <textarea class="modal-form__comment" name="comment" id="comment" rows="10" placeholder="Залишіть своє повідомлення"></textarea>
+                    <i class="fa fa-paperclip" aria-hidden="true">
+                        <input type="file" name="foto">
+                    </i>
+                    <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
+                </div>
+            
+            </form>
         </div>
-           
-        <div class="take-order__row-box">
-            <input class="take-order__input" id="email" type="email" placeholder="test@test.com" required>
-            <span class="bar"></span>
-            <label>Email</label>
+    </div>
+    <div>
+        <div class="take-order__box-info">
+            <div class="contact__box-tel">
+                <h4 class="take-order__info-text title_second">Телефони</h4>
+                    <ul class="contact__link-order">
+                        <li><a class="contact__link text-second" href="tel:+380957384551">+38 (095) -73-84-551</a></li>
+                        <li><a class="contact__link text-second" href="tel:+380980025235">+38 (098) -00-25-235</a></li>
+                    </ul>
+            </div>
+            <div class="contact__box-email">
+                <h4 class="take-order__info-text title_second">Email</h4>
+                <a class="contact__link-order text-second" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+            </div>
+            <div class="contact__box-worktime">
+                <h4 class="take-order__info-text title_second">Робочий час</h4>
+                <p class="contact__link-order text-second">Пн-пт:з 8:00 до 19:00</p>
+                <p class="contact__link-order text-second">Сб, Нд:з 10:00 до 17:00</p>
+            </div>
         </div>
-        <div class="take-order__row-box">
-            <select class="" name="type">
-                <label>Види пластика</label>
-                <span class="bar"></span>
-                <option value="PLA">PLA (ПЛА)</option>
-                <option value="ABS">ABS (АБС)</option>
-                <option value="PVA">PVA (ПВА)</option>
-                <option value="Nylone">Nylone (Нейлон)</option>
-                <option value="HIPS">HIPS (Ударостійкий полістирол)</option>
-            </select>
+        <div class="contact__box-img">
+            <picture>
+                <source srcset="./images/take-order/pic.webp 1x, ./images/take-order/pic@2x.webp 2x"
+                    type="image/webp">
+                <source srcset="./images/take-order/pic.jpg 1x, ./images/take-order/pic@2x.jpg 2x">
+                <img class="more-photo__image" src="./images/take-order/pic.jpg"
+                    alt="Модели круглых горшков для цветов">
+            </picture>
+            <!-- <picture>
+                <source srcset="./images/gallery/gallery-morephoto-12.webp 1x, ./images/gallery/gallery-morephoto-12@2x.webp 2x"
+                    type="image/webp">
+                <source srcset="./images/gallery/gallery-morephoto-12.jpg 1x, ./images/gallery/gallery-morephoto-12@2x.jpg 2x">
+                <img class="more-photo__image" src="./images/gallery/gallery-morephoto-12.jpg"
+                    alt="Модели круглых горшков для цветов">
+            </picture> -->
         </div>
-        <div class="take-order__row-box">
-            <select class="" name="quality">
-                <label>Якість друку</label>
-                <span class="bar"></span>
-                <option value="300µm">300 мікрон</option>
-                <option selected value="200µm">200 мікрон</option>
-                <option value="100µm">100 мікрон</option>
-                <option>Труднощі у виборі - ми допоможемо</option>
-            </select>
-        </div>
-        <div class="take-order__row-box">
-            <select class="" name="color">
-                <label>Колір</label>
-                <span class="bar"></span>
-                <option value="red">Червоний</option>
-                <option value="white">Білий</option>
-                <option value="black">Чорний</option>
-                <option value="yellow">Жовтий</option>
-            </select>
-        </div>
-        <div class="take-order__commit">
-            <label>Повідомлення</label>
-            <textarea class="modal-form__comment" name="comment" id="comment" rows="10" placeholder="Залишіть своє повідомлення"></textarea>
-            <i class="fa fa-paperclip" aria-hidden="true">
-                <input type="file" name="foto">
-            </i>
-            <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
-        </div>
-    
-    </form>
+    </div>
 </div>
 </section>
-
-
