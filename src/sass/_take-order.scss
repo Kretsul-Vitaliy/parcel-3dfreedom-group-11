@@ -158,11 +158,13 @@
 }
 
 .take-order__subtitle {
+  margin-bottom: 50px;
 }
 .take-order__form {
-  // width: 515px;
+  width: 515px;
 }
 .take-order__row-box {
+  margin-bottom: 50px;
 }
 .take-order__input {
 }
@@ -193,6 +195,10 @@
     border-width: 13px 9.5px 0 9.5px;
     border-color: #2b2b2b transparent transparent transparent;
   }
+  .select-wrapper::after:hover {
+    transform: rotate(150deg) translate(-80px, -40px);
+    border-color: #487996;
+  }
 }
 
 .select {
@@ -208,7 +214,7 @@
   background: transparent;
   //   background: rgba(72, 121, 150, 0.5);
   // отступы от рамки к тексту
-  padding: 10px 35px 4px 2px;
+  padding: 0px 35px 8px 2px;
 
   //   убираем браузерную обводку
   outline: none;
@@ -218,10 +224,15 @@
   &::-ms-expand {
     display: none;
   }
+
   //   &:hover {
   //     background-color: red;
   //     color: yellowgreen;
   //   }
+  // &:focus {
+  //   outline: none;
+  //   box-shadow: 0px 0px 0px 0px #487996;
+  // }
 }
 
 .take-order__commit {
@@ -312,61 +323,81 @@
   margin-bottom: 30px;
 }
 .take-order__input {
-  font-size: 16px;
-  padding: 10px;
+  font-size: 18px;
+  // padding: 10px;
   display: block;
-  width: 100%;
+  // width: 100%;
   border: none;
   border-bottom: 1px solid #487996;
+  // &:focus {
+  //   outline: none;
+  // }
+  width: 100%; /* Ширина поля */
+  box-sizing: border-box; /* Ширина не учитывает padding */
+  padding: 0.5rem 0; /* Поля вокруг текста */
+  // border: none; /* Убираем рамку */
+  // border-bottom: 1px solid #ccc; /* Линия снизу */
+  background: transparent; /* Прозрачный фон */
   &:focus {
-    outline: none;
+    outline: none; /* Убираем контур */
+    border-color: var(--accent-color); /* Синяя линия снизу */
   }
 }
 /* LABEL ======================================= */
 .take-order__label {
-  // color: #999;
+  // color: var(--text-color);
   font-size: 18px;
-  position: absolute;
+  // position: absolute;
   pointer-events: none;
-  left: 0px;
-  top: 15px;
+  // left: 0px;
+  // top: 17px;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
+  display: block; /* Блочный элемент */
+  color: var(--text-color); /* Цвет подсказки */
+  transform: translateY(-1.5rem); /* Сдвигаем вверх */
+  line-height: 1rem; /* Межстрочный интервал */
+  transition: 0.5s; /* Время трансформации */
 }
 /* active state */
 .take-order__input {
   &:focus label,
   &:valid label {
-    top: -15px;
+    top: -17px;
     font-size: 14px;
-    color: #5264ae;
+    color: var(--text-color);
   }
+}
+.take-order__row-box input:focus + label,
+.take-order__row-box input:valid + label {
+  font-size: 14px; /* Размер шрифта */
+  transform: translateY(-3.5rem); /* Сдвигаем вверх */
 }
 /* BOTTOM BARS ================================= */
-.bar {
-  position: relative;
-  display: block;
-  width: 100%;
-  &:before,
-  &:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 0;
-    position: absolute;
-    background: #5264ae;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-  }
-  &:before {
-    left: 50%;
-  }
-  &:after {
-    right: 50%;
-  }
-}
+// .bar {
+//   position: relative;
+//   display: block;
+//   width: 100%;
+//   &:before,
+//   &:after {
+//     content: '';
+//     height: 2px;
+//     width: 0;
+//     bottom: 0;
+//     position: absolute;
+//     background: #5264ae;
+//     transition: 0.2s ease all;
+//     -moz-transition: 0.2s ease all;
+//     -webkit-transition: 0.2s ease all;
+//   }
+//   &:before {
+//     left: 50%;
+//   }
+//   &:after {
+//     right: 50%;
+//   }
+// }
 /* active state */
 // input:focus
 //   ~ .bar:before,
@@ -374,3 +405,35 @@
 //     width: 50%
 
 // test
+
+// style label
+// form {
+//   background: #f5f5f5; /* Цвет фона */
+//   width: 300px; /* Ширина формы */
+//   margin: auto; /* Выравниваем по центру */
+//   padding: 20px; /* Поля вокруг текста */
+// }
+// .row input {
+//   width: 100%; /* Ширина поля */
+//   box-sizing: border-box; /* Ширина не учитывает padding */
+//   padding: 0.5rem 0; /* Поля вокруг текста */
+//   border: none; /* Убираем рамку */
+//   border-bottom: 1px solid #ccc; /* Линия снизу */
+//   background: transparent; /* Прозрачный фон */
+// }
+// .row input:focus {
+//   outline: none; /* Убираем контур */
+//   border-color: #1976d2; /* Синяя линия снизу */
+// }
+// .row label {
+//   display: block; /* Блочный элемент */
+//   color: #aaa; /* Цвет подсказки */
+//   transform: translateY(-1.5rem); /* Сдвигаем вверх */
+//   line-height: 1rem; /* Межстрочный интервал */
+//   transition: 0.5s; /* Время трансформации */
+// }
+// .row input:focus + label,
+// .row input:valid + label {
+//   font-size: 10px; /* Размер шрифта */
+//   transform: translateY(-2.5rem); /* Сдвигаем вверх */
+// }
