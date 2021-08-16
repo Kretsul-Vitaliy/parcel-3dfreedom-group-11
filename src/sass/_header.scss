@@ -1,19 +1,130 @@
 @media screen and (min-width: 320px) {
+  .header-menu {
+    background-color: rgba(72, 121, 150, 0.1);
+    outline: 1px solid;
+  }
+
+  .header-nav__item,
+  .header-nav__link,
+  .header-phone__link {
+    @include fontStyle(16px, 1.26, var(--text-color), 0.02em, 400);
+    color: var(--text-color);
+  }
+
+  .header-nav__link:hover,
+  .header-nav__link:focus,
+  .header-phone__link:hover,
+  .header-phone__link:focus {
+    color: #487996;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .container-header {
+    padding-top: 32px;
+    padding-bottom: 36px;
+  }
+
   .logo {
     width: 101px;
+    height: 25px;
+  }
+
+  .container__nav,
+  .container-phone {
+    display: none;
   }
 }
+
 @media screen and (min-width: 768px) {
+  .container-header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
   .logo {
     width: 125px;
+    height: 31px;
+  }
+
+  .container-phone {
+    display: inline;
+  }
+
+  .container__nav {
+    display: none;
+  }
+
+  .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-phone__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
+
 @media screen and (min-width: 1444px) {
+  .container-header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
   .logo {
     width: 192px;
+    height: 49px;
   }
-}
-.logo {
-  padding-top: 32px;
-  padding-bottom: 36px;
+
+  .container-header,
+  .navigation-header,
+  .container__nav,
+  .header-nav,
+  .container-phone {
+    display: flex;
+  }
+
+  .container__nav {
+    margin-top: 4px;
+  }
+
+  .header-nav {
+    justify-content: space-around;
+  }
+
+  .container__nav,
+  .header-nav {
+    justify-content: start;
+  }
+  .header-nav__item {
+    text-align: center;
+  }
+
+  // .header-nav__item,
+  // .header-nav__link,
+  // .header-phone__link {
+  //   @include fontStyle(16px, 1.26, var(--text-color), 0.02em, 400);
+  //   color: var(--text-color);
+  // }
+
+  // .header-nav__link:hover,
+  // .header-nav__link:focus,
+  // .header-phone__link:hover,
+  // .header-phone__link:focus {
+  //   color: #487996;
+  //   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // }
+
+  .header__icon {
+    margin-right: 170px;
+  }
+
+  .header-nav__item:not(:last-child) {
+    margin-right: 19px;
+  }
+
+  .header-phone {
+    margin-left: 150px;
+    // margin-left: 234px;
+  }
 }
