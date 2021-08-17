@@ -529,10 +529,10 @@
   opacity: 0;
   -webkit-backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  -o-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
+  -webkit-transition: opacity 500ms ease-out;
+  -moz-transition: opacity 500ms ease-out;
+  -o-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
@@ -573,17 +573,27 @@
 }
 .mfp-arrow-left {
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  width: 42px;
+  height: 42px;
   position: absolute;
   left: 5%;
   top: 50%;
+  background-image: url(../images/gallery/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
 }
 .mfp-arrow-right {
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  width: 42px;
+  height: 42px;
   position: absolute;
   right: 5%;
   top: 50%;
+  background-image: url(../images/gallery/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
 }
