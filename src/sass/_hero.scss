@@ -1,38 +1,38 @@
 //HERO MAIN
-.container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
+// .container {
+//   position: relative;
+//   width: 100%;
+//   margin: 0 auto;
 
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  @media screen and (min-width: 1444px) {
-    max-width: 1444px;
-    padding-left: 189px;
-    padding-right: 189px;
-  }
-}
-.hero {
-  width: 100%;
-  padding-top: 32px;
-  @media screen and (min-width: 768px) {
-    padding-left: 114px;
-    padding-right: 114px;
-    padding-top: 35px;
-  }
-  @media screen and (min-width: 1444px) {
-    padding-left: 187px;
-    padding-right: 187px;
-  }
-}
+//   @media screen and (min-width: 320px) {
+//     max-width: 320px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//     padding-left: 60px;
+//     padding-right: 60px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     max-width: 1444px;
+//     padding-left: 189px;
+//     padding-right: 189px;
+//   }
+// }
+// .hero {
+//   width: 100%;
+//   padding-top: 32px;
+//   @media screen and (min-width: 768px) {
+//     padding-left: 114px;
+//     padding-right: 114px;
+//     padding-top: 35px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     padding-left: 187px;
+//     padding-right: 187px;
+//   }
+// }
 .hero-title {
   font-family: var(--main-font);
   font-weight: 400;
