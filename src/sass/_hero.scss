@@ -34,6 +34,7 @@
   }
 }
 .hero-title {
+  display: block;
   font-family: var(--main-font);
   font-weight: 400;
   // font-size: 48px;
@@ -81,7 +82,7 @@
   text-align: center;
   color: var(--text-color);
   padding-top: 32px;
-  padding-bottom: 26px;
+  padding-bottom: 52px;
   @media screen and (min-width: 768px) {
     font-size: 18px;
     padding-top: 64px;
@@ -89,43 +90,57 @@
   @media screen and (min-width: 1444px) {
     font-size: 36px;
     padding-top: 100px;
-    padding-bottom: 45px;
+    padding-bottom: 90px;
+  }
+}
+// =============petals
+
+.petals {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 // =============petals left
-.petals {
-  display: flex;
-  justify-content: space-between;
-  width: 768px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 .petals-left {
   position: relative;
   display: flex;
   flex-direction: column;
   padding-left: 32px;
-  // position: absolute;
-  // top: 0px;
-  // left: 0px;
 }
 .petal1 {
+  display: block;
   background: var(--white-color);
   width: 74px;
   height: 74px;
   border-radius: 0px 0px 35px 0px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    border-radius: 0px 0px 72px 0px;
+  }
 }
 .petal1::after {
   display: block;
   content: '';
-
   background-image: url('../images/tablet/hero-left-top-tab.jpg');
   width: 74px;
   height: 74px;
   border-radius: 50%;
   margin-left: 100%;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    background-size: cover;
+  }
 }
 .petal2 {
   background: var(--white-color);
@@ -134,6 +149,12 @@
   border-radius: 0px 35px 0px 0px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   margin-left: 74px;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    margin-left: 144px;
+    border-radius: 0px 72px 0px 0px;
+  }
 }
 .petal3 {
   background: var(--white-color);
@@ -141,6 +162,11 @@
   height: 74px;
   border-radius: 0px 0px 0px 35px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    border-radius: 0px 0px 0px 72px;
+  }
 }
 .petal4 {
   background: var(--white-color);
@@ -149,7 +175,14 @@
   border-radius: 0px 0px 35px 0px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   margin-left: 74px;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    margin-left: 144px;
+    border-radius: 0px 0px 72px 0px;
+  }
 }
+
 .petal4::before {
   position: absolute;
   display: block;
@@ -160,24 +193,54 @@
   border-radius: 50%;
   top: 296px;
   left: 32px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    top: 576px;
+    left: 32px;
+    background-size: cover;
+  }
 }
 // =============petals right
 .petals-right {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-right: 32px;
-  // position: absolute;
-  // top: 156;
-  // left: 588;
 }
+
 .petal5 {
-  background: var(--white-color);
+  background-image: url('../images/tablet/hero-right-top-tab.jpg');
   width: 74px;
   height: 74px;
   border-radius: 0px 0px 72px 0px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border: transparent;
   margin-left: 74px;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    background-size: cover;
+    margin-left: 144px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+.petal5::before {
+  position: absolute;
+  display: block;
+  content: '';
+  background: var(--white-color);
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: 0;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    left: 0px;
+  }
 }
 .petal6 {
   background: var(--white-color);
@@ -186,6 +249,10 @@
   border-radius: 50%;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border: transparent;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+  }
 }
 .petal7 {
   background: var(--white-color);
@@ -195,6 +262,12 @@
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   margin-left: 74px;
   border: transparent;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    margin-left: 144px;
+    border-radius: 72px 0px;
+  }
 }
 .petal8 {
   background: var(--white-color);
@@ -203,6 +276,28 @@
   border-radius: 0px 0px 0px 35px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border: transparent;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+  }
+}
+.petal8::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url('../images/tablet/hero-right-bot-tab.jpg');
+  width: 74px;
+  height: 74px;
+  border-radius: 72px 72px 0px 0px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+  top: 296;
+  left: 74px;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    background-size: cover;
+    left: 144px;
+  }
 }
 .petal9 {
   background: var(--white-color);
@@ -212,4 +307,18 @@
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   margin-left: 74px;
   border: transparent;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 124px;
+    margin-left: 144px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+// ===========Vector
+.vector {
+  padding: 30px 32px 30px 32px;
+  cursor: pointer;
+  @media screen and (min-width: 1444px) {
+    padding: 58px 63px 58px 63px;
+  }
 }
