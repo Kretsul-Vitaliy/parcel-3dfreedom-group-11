@@ -581,7 +581,7 @@
   width: 42px;
   height: 42px;
   position: absolute;
-  left: 5%;
+  left: 0;
   top: 50%;
   background-image: url(../images/gallery/arrow-left.svg);
   background-repeat: no-repeat;
@@ -594,11 +594,20 @@
   width: 42px;
   height: 42px;
   position: absolute;
-  right: 5%;
+  right: 0;
   top: 50%;
   background-image: url(../images/gallery/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-color: transparent;
+}
+.mfp-img {
+  max-width: 240px;
+  @media screen and (min-width: $tablet) {
+    max-width: 560px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: unset;
+  }
 }
