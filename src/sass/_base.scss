@@ -1,23 +1,26 @@
-.container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+// .container_two {
+//   width: 100%;
+//   padding-left: 20px;
+//   padding-right: 20px;
 
-  @media screen and (min-width: 480px) {
-    margin-left: auto;
-    margin-right: auto;
+//   @media screen and (min-width: 480px) {
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding-left: 60px;
+//     padding-right: 60px;
+//     max-width: 480px;
+//   }
 
-    max-width: 480px;
-  }
+//   @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     max-width: 1200px;
+//     padding-left: 190px;
+//     padding-right: 190px;
+//   }
+// }
 
 .title {
   font-family: var(-main-font);
@@ -58,6 +61,8 @@
 }
 
 .btn {
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   height: 56px;
   width: 280px;
@@ -82,7 +87,7 @@
   color: var(--text-color);
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.25;
 
   @media screen and (min-width: 1200px) {
     font-size: 18px;
