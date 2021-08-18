@@ -5,4 +5,4 @@ $(document).ready(function(){$(".open-btn").click(function(n){$(".mobile").toggl
 },{}],"isWM":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menu");
 },{"./sass/main.scss":"clu1","./js/menu":"i0CD"}]},{},["isWM"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/3d-printing-page.1f959fb7.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/3d-printing-page.164b2b29.js.map

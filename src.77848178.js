@@ -7,4 +7,4 @@ $(document).ready(function(){$(".open-btn").click(function(n){$(".mobile").toggl
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/gallery"),require("./js/menu");
 },{"./sass/main.scss":"clu1","./js/gallery":"chxP","./js/menu":"i0CD"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/src.df464f20.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/src.77848178.js.map
