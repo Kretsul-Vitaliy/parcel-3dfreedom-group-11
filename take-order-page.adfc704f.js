@@ -5,4 +5,4 @@ $(document).ready(function(){$(".open-btn").click(function(n){$(".mobile").toggl
 },{}],"DVOd":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menu");
 },{"./sass/main.scss":"clu1","./js/menu":"i0CD"}]},{},["DVOd"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/take-order-page.8e2be7ef.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/take-order-page.adfc704f.js.map
