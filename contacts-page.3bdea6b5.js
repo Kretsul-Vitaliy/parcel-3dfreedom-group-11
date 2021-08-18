@@ -5,4 +5,4 @@ $(document).ready(function(){$(".open-btn").click(function(n){$(".mobile").toggl
 },{}],"hGbe":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menu");
 },{"./sass/main.scss":"clu1","./js/menu":"i0CD"}]},{},["hGbe"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/contacts-page.c08a729e.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/contacts-page.3bdea6b5.js.map
