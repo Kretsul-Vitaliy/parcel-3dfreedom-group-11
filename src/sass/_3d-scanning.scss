@@ -71,15 +71,15 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1444px) {
   .scanning__paragraph {
     background-image: url(../images/3D-scanning/backgraund_d.jpg);
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  (min-resolution: 192dpi) and (min-width: 1200px),
-  (min-resolution: 2dppx) and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  (min-resolution: 192dpi) and (min-width: 1444px),
+  (min-resolution: 2dppx) and (min-width: 1444px) {
   .scanning__paragraph {
     background-image: url(../images/3D-scanning/backgraund_d@2x.jpg);
   }
@@ -88,7 +88,7 @@
 .scanning__title {
   margin-bottom: 17px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     margin-bottom: 25px;
   }
 }
@@ -100,14 +100,14 @@
     margin-bottom: 25px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     margin-bottom: 52px;
   }
 }
 
 .scanning__btn {
   margin-bottom: 76px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     margin-bottom: 100px;
   }
 }
@@ -138,13 +138,15 @@
     background-image: url(../images/3D-scanning/first_t@2x.png);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
+    height: 150px;
     background-image: url(../images/3D-scanning/first_d.png);
   }
 
-  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    (min-resolution: 192dpi) and (min-width: 1200px),
-    (min-resolution: 2dppx) and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-width: 1444px) {
+    height: 150px;
     background-image: url(../images/3D-scanning/first_d@2x.png);
   }
 }
@@ -168,13 +170,13 @@
     background-image: url(../images/3D-scanning/second_t@2x.png);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     background-image: url(../images/3D-scanning/second_d.png);
   }
 
-  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    (min-resolution: 192dpi) and (min-width: 1200px),
-    (min-resolution: 2dppx) and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-width: 1444px) {
     background-image: url(../images/3D-scanning/second_d@2x.png);
   }
 }
@@ -198,13 +200,13 @@
     background-image: url(../images/3D-scanning/third_t@2x.png);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     background-image: url(../images/3D-scanning/third_d.png);
   }
 
-  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    (min-resolution: 192dpi) and (min-width: 1200px),
-    (min-resolution: 2dppx) and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-width: 1444px) {
     background-image: url(../images/3D-scanning/third_d@2x.png);
   }
 }
@@ -228,13 +230,13 @@
     background-image: url(../images/3D-scanning/fourth_t@2x.png);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     background-image: url(../images/3D-scanning/fourth_d.png);
   }
 
-  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    (min-resolution: 192dpi) and (min-width: 1200px),
-    (min-resolution: 2dppx) and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-width: 1444px) {
     background-image: url(../images/3D-scanning/fourth_d@2x.png);
   }
 }
@@ -251,7 +253,7 @@
     margin-left: -12px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     margin-bottom: 100px;
     margin-top: -21px;
     margin-left: -21px;
@@ -279,13 +281,23 @@
     margin-top: 12px;
     margin-left: 12px;
     height: 210px;
+
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1444px) {
     flex-basis: calc(100% / 4 - 21px);
     height: 298px;
     margin-top: 21px;
     margin-left: 21px;
+
+    padding-top: 50px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 24px;
   }
 }
 
@@ -298,6 +310,10 @@
   color: #487996;
 
   @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1444px) {
     font-size: 18px;
   }
 }
