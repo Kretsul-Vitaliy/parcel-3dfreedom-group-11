@@ -1,22 +1,45 @@
 @media screen and (min-width: 320px) {
-  .header-menu {
-    background-color: rgba(72, 121, 150, 0.1);
-    outline: 1px solid;
+  .header-nav__item {
+    @include fontStyle(18px, 1.25, var(--text-color), 0.01em, 400);
+    color: var(--text-color);
   }
 
-  .header-nav__item,
-  .header-nav__link,
+  .header-nav__link {
+    @include fontStyle(16px, 1.19, var(--text-color), 0.01em, 400);
+  }
+
   .header-phone__link {
-    @include fontStyle(16px, 1.26, var(--text-color), 0.02em, 400);
-    color: var(--text-color);
+    @include fontStyle(16px, 1.25, var(--text-color), 0.01em, 400);
   }
 
   .header-nav__link:hover,
   .header-nav__link:focus,
   .header-phone__link:hover,
   .header-phone__link:focus {
-    color: #487996;
+    color: var(--title-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .container-header {
+    width: 278px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-burger {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .burger {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger-item:not(:last-child) {
+    margin-right: 46px;
   }
 
   .container-header {
@@ -29,16 +52,32 @@
     height: 25px;
   }
 
+  .open-btn {
+    background-color: transparent;
+  }
+
+  .burger__icon,
+  .call__icon {
+    fill: var(--title-color);
+    color: var(--title-color);
+    background-color: transparent;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .container__nav,
-  .container-phone {
+  .header-phone__link {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-header {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    width: 648px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .logo {
@@ -46,8 +85,25 @@
     height: 31px;
   }
 
-  .container-phone {
+  .container-phone,
+  .header-phone__link {
     display: inline;
+  }
+
+  .contact__icon {
+    margin-right: 8px;
+  }
+
+  .header-phone__link:hover,
+  .header-phone__link:focus {
+    fill: var(--title-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-phone__item {
+    display: flex;
   }
 
   .container__nav {
@@ -63,12 +119,24 @@
   .header-phone__item:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  .container-phone {
+    order: 4;
+  }
+
+  .burger-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .call__icon {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1444px) {
   .container-header {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    width: 1280px;
+    align-items: flex-start;
   }
 
   .logo {
@@ -84,10 +152,6 @@
     display: flex;
   }
 
-  .container__nav {
-    margin-top: 4px;
-  }
-
   .header-nav {
     justify-content: space-around;
   }
@@ -100,21 +164,6 @@
     text-align: center;
   }
 
-  // .header-nav__item,
-  // .header-nav__link,
-  // .header-phone__link {
-  //   @include fontStyle(16px, 1.26, var(--text-color), 0.02em, 400);
-  //   color: var(--text-color);
-  // }
-
-  // .header-nav__link:hover,
-  // .header-nav__link:focus,
-  // .header-phone__link:hover,
-  // .header-phone__link:focus {
-  //   color: #487996;
-  //   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // }
-
   .header__icon {
     margin-right: 170px;
   }
@@ -123,8 +172,13 @@
     margin-right: 19px;
   }
 
-  .header-phone {
-    margin-left: 150px;
-    // margin-left: 234px;
+  .header-nav__link:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .mobile-menu,
+  .burger__icon,
+  .call__icon {
+    display: none;
   }
 }
