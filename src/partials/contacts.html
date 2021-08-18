@@ -2,7 +2,7 @@
     <h2 class="contact__title title">Контакти</h2>
     <div class="contact__position-one">
         <div class="contact__box-iframe">
-            <iframe class="contact__iframe" src="https://www.youtube.com/embed/uXGE0vuuaDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+            <iframe class="contact__iframe" src="https://www.youtube.com/embed/LCXjaTNx_vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="contact__box-text">
             <p class="contact__description">Людина уперше побачивши процес 3D друку може легко захопитися спостереженням за цим процесом не на десяток хвилин.
@@ -30,9 +30,16 @@
         </div>
         <div class="contact__row-box">
             <label class="modal__form-field">
-                Повідомлення
+                Повідомлення</label>
                 <textarea name="user-message" class="modal__form-message" placeholder="Залишіть своє повідомлення"></textarea>
-            </label>
+                <label class="file-label" for="file">
+                    <input class="file" type="file" id="file" name="file">
+                    <span>
+                        <svg class="file-add">
+                            <use href="./images/sprite/symbol-defs.svg#icon-flippaper"></use>
+                        </svg>
+                    </span>
+                </label>
             <p class="modal__form-info">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
         </div>
         <p class="test-btn"><button type="submit" class="modal__form-btn">Відправити</button></p>
