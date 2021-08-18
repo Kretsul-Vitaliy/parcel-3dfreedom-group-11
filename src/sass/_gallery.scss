@@ -588,6 +588,10 @@
   background-position: center;
   background-size: contain;
   background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    left: 15%;
+  }
 }
 .mfp-arrow-right {
   cursor: pointer;
@@ -601,6 +605,10 @@
   background-position: center;
   background-size: contain;
   background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    right: 15%;
+  }
 }
 .mfp-img {
   max-width: 240px;
