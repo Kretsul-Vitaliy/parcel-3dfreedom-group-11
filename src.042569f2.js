@@ -7,4 +7,4 @@ $(document).ready(function(){$(".zoom-gallery").magnificPopup({delegate:"a",type
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/gallery"),require("./js/menu");
 },{"./sass/main.scss":"clu1","./js/gallery":"chxP","./js/menu":"i0CD"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/src.2ef9235d.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/src.042569f2.js.map

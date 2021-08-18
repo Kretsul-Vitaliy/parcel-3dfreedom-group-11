@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"hGbe":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menu");
 },{"./sass/main.scss":"clu1","./js/menu":"i0CD"}]},{},["hGbe"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/contacts-page.69f867e5.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/contacts-page.1f7b01a5.js.map
