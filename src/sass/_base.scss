@@ -59,6 +59,9 @@
 }
 
 .btn {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
   height: 56px;
   width: 280px;
   font-family: var(--main-font);
@@ -82,7 +85,7 @@
   color: var(--text-color);
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.25;
 
   @media screen and (min-width: 1444px) {
     font-size: 18px;
