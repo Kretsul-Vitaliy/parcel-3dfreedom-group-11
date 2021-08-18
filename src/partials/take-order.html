@@ -27,23 +27,21 @@
     <div class="wrapper-box">
         <div class="wrapper-box2">
             <h3 class="take-order__subtitle title_second">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
-            <div> <form class="take-order__form" name="form1" action="" method="POST" autocomplete="off">
+            <div> <form class="take-order__form position-paper" name="form1" action="" method="POST" autocomplete="off">
                 <div class="group take-order__row-box">
                     <input class="take-order__input" id="name" type="text" minlength="2" maxlength="25" autofocus required>
-                    <span class="bar"></span>
                     <label class="take-order__label text-second">Ім’я</label>
                 </div>
                 
                 <div class="group take-order__row-box">
                     <input class="take-order__input" id="email" type="email" required>
-                    <span class="bar"></span>
                     <label class="take-order__label text-second">Email</label>
                 </div>
                 <div class="take-order__row-box">
                     <div class="select-wrapper">
                         <select class="select text-second line-label" name="select-category-type">
                             <!-- <span class="bar"></span> -->
-                            <option class="select__option" value="type-plastic">Види пластика</option>
+                            <option class="select__option" selected disabled value="type-plastic">Види пластика</option>
                             <option class="select__option" value="ABS">ABS (АБС)</option>
                             <option class="select__option" value="PLA">PLA (ПЛА)</option>
                             <option class="select__option" value="PVA">PVA (ПВА)</option>
@@ -56,7 +54,7 @@
                     <div class="select-wrapper">
                         <select class="select text-second line-label" name="select-category-quality">
                             <!-- <span class="bar"></span> -->
-                            <option class="select__option" selected value="quality-print">Якість друку</option>
+                            <option class="select__option" selected disabled value="quality-print">Якість друку</option>
                             <option class="select__option" value="300µm">300 мікрон</option>
                             <option class="select__option" value="200µm">200 мікрон</option>
                             <option class="select__option" value="100µm">100 мікрон</option>
@@ -68,7 +66,7 @@
                     <div class="select-wrapper">
                         <select class="select text-second line-label" name="select-category-color">
                             <!-- <span class="bar"></span> -->
-                            <option class="select__option" selecter value="color">Колір</option>
+                            <option class="select__option" selected disabled value="color">Колір</option>
                             <option class="select__option" value="red">Червоний</option>
                             <option class="select__option" value="white">Білий</option>
                             <option class="select__option" value="black">Чорний</option>
@@ -79,29 +77,51 @@
                 <div class="take-order__commit">
                     <label class="text-second">Повідомлення</label>
                     <textarea class="modal-form__comment" name="comment" id="comment" rows="10" placeholder="Залишіть своє повідомлення"></textarea>
-                    <i class="fa fa-paperclip" aria-hidden="true">
-                        <input type="file" name="foto">
-                    </i>
-                    <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
+                    <label class="file-label" for="file">
+                        <input class="file" type="file" id="file" name="file">
+                        <span>
+                            <svg class="file-icon">
+                                <use href="./images/sprite/symbol-defs.svg#icon-flippaper"></use>
+                            </svg>
+                        </span>
+                    </label>
+                   <!-- <i class="fal fa-paperclip" aria-hidden="true">
+                        <input type="file" name="foto"></i> -->
+                    <!-- <div class="papper">
+                                            <i class="material-icons">attach_file</i>
+                    </div> -->
+                    <p class="form-comment text-second">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+                    <!-- <i class="fal fa-paperclip" aria-hidden="true">&#xf0c6;</i>
+                    <i style="font-size:24px" class="fal fa-paperclip"></i> -->
+
+            </div>
+            <!-- <div class="example-1">
+                <div class="form-group">
+                    <label class="label">
+                        <i class="material-icons">attach_file</i>
+                        <span class="title"></span>
+                        <input type="file">
+                    </label>
                 </div>
-            
+            </div> -->
+            <div class="take-order__btn"><button type="submit" class="modal__form-btn">Відправити</button></div>
             </form>
         </div>
     </div>
     <div>
         <div class="take-order__box-info">
-            <div class="contact__box-tel">
+            <div class="take__box take__box-tel">
                 <h4 class="take-order__info-text title_second">Телефони</h4>
                     <ul class="contact__link-order">
                         <li><a class="contact__link text-second" href="tel:+380957384551">+38 (095) -73-84-551</a></li>
                         <li><a class="contact__link text-second" href="tel:+380980025235">+38 (098) -00-25-235</a></li>
                     </ul>
             </div>
-            <div class="contact__box-email">
+            <div class="take__box take__box-email">
                 <h4 class="take-order__info-text title_second">Email</h4>
                 <a class="contact__link-order text-second" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
             </div>
-            <div class="contact__box-worktime">
+            <div class="take__box take__box-worktime">
                 <h4 class="take-order__info-text title_second">Робочий час</h4>
                 <p class="contact__link-order text-second">Пн-пт:з 8:00 до 19:00</p>
                 <p class="contact__link-order text-second">Сб, Нд:з 10:00 до 17:00</p>

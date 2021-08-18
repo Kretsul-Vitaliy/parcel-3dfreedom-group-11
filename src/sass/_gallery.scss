@@ -1,4 +1,5 @@
 .gallery {
+  overflow: hidden;
   // padding-top: 26px;
   // padding-bottom: 26px;
 
@@ -15,34 +16,7 @@
   margin: 0 auto;
 
   position: relative;
-  &::after {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: -10;
-    right: -10%;
-    bottom: -10%;
-    content: ' ';
-    width: 73px;
-    height: 73px;
-    background: #ffffff;
 
-    border-radius: 25px 0px;
-    transform: rotate(90deg);
-    @media screen and (min-width: $tablet) {
-      right: 5%;
-      bottom: -36%;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 144px;
-      height: 144px;
-      right: 2%;
-      bottom: -95%;
-
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      border-radius: 72px 0px;
-      transform: rotate(90deg);
-    }
-  }
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
     // padding-left: 60px;
@@ -104,7 +78,7 @@
       width: 144px;
       height: 144px;
       border-radius: 0px 0px 72px 0px;
-      right: -21%;
+      right: -10%;
       top: 250%;
     }
   }
@@ -165,7 +139,7 @@
     }
     @media screen and (min-width: $desktop) {
       top: 50%;
-      right: -38%;
+      right: -28%;
       width: 144px;
       height: 144px;
     }
@@ -223,6 +197,37 @@
 .more-photo {
   padding-top: 26px;
   padding-bottom: 26px;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+    right: 1%;
+    top: 1%;
+    content: ' ';
+    width: 73px;
+    height: 73px;
+    background: #ffffff;
+
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+    @media screen and (min-width: $tablet) {
+      right: 3%;
+      top: 8%;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 144px;
+      height: 144px;
+      right: 3%;
+      top: 30%;
+
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 72px 0px;
+      transform: rotate(90deg);
+    }
+  }
 
   @media screen and (min-width: $desktop) {
     padding-top: 50px;
@@ -305,8 +310,8 @@
     @media screen and (min-width: $desktop) {
       content: ' ';
       position: absolute;
-      top: 20%;
-      right: -20%;
+      top: 50%;
+      right: -5%;
       transform: translate(-50%, -50%);
       border-radius: 50%;
       width: 144px;
@@ -529,10 +534,10 @@
   opacity: 0;
   -webkit-backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  -o-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
+  -webkit-transition: opacity 500ms ease-out;
+  -moz-transition: opacity 500ms ease-out;
+  -o-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
@@ -573,17 +578,44 @@
 }
 .mfp-arrow-left {
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  width: 42px;
+  height: 42px;
   position: absolute;
-  left: 5%;
+  left: 0;
   top: 50%;
+  background-image: url(../images/gallery/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    left: 15%;
+  }
 }
 .mfp-arrow-right {
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  width: 42px;
+  height: 42px;
   position: absolute;
-  right: 5%;
+  right: 0;
   top: 50%;
+  background-image: url(../images/gallery/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    right: 15%;
+  }
+}
+.mfp-img {
+  max-width: 240px;
+  @media screen and (min-width: $tablet) {
+    max-width: 560px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: unset;
+  }
 }

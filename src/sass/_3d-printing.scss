@@ -1,17 +1,24 @@
-.printing__title {
-  @media screen and(min-width:320px) {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1.25;
-    color: #487996;
-    margin-top: 32px;
-  }
+.printing__container {
+  max-width: 320px;
 
   @media screen and (min-width: 768px) {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 45px;
-    color: #487996;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    max-width: 1092px;
+  }
+}
+
+.printing__title {
+  margin-top: 44px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-top: 24px;
   }
 }
 
@@ -21,22 +28,29 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 53.6px;
+    margin-top: 16px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 24px;
+    margin-bottom: 52.3px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 100px;
   }
 }
 
 .printing__item {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  background: #ffffff;
+  justify-content: center;
+  background: var(--white-color);
   opacity: 0.8;
   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
@@ -52,8 +66,26 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     width: 152px;
     height: 182px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    width: 250px;
+    height: 298px;
+  }
+}
+
+.printing__box {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 118.2px;
   }
 }
 
@@ -63,20 +95,49 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.28;
-    color: #487996;
+    color: var(--title-color);
     text-align: center;
-    padding-top: auto;
+  }
+  @media screen and (min-width: 1444px) {
+    font-size: 18px;
+    max-width: 200px;
+  }
+}
+
+.printing-features__container {
+  max-width: 320px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    max-width: 1092px;
   }
 }
 
 .printing-features__wrapper {
-  @media screen and (max-width: 767px) {
-    margin-top: 16px;
+  @media screen and (min-width: 320px) {
+    margin-bottom: 52px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    margin-bottom: 76px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 100px;
+  }
+}
+
+.printing-features__box {
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    padding-left: 78px;
   }
 }
 
@@ -85,39 +146,36 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
-  color: #2b2b2b;
+  color: var(--text-color);
 
   &--active {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.25;
-    color: #487996;
+    color: var(--title-color);
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
+}
+
+.printing-features__text:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 24px;
   }
 }
 
 .printing-features__btn {
-  height: 56px;
-  width: 280px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--title-color);
-  margin-top: 24px;
+  cursor: pointer;
 
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30.5px;
+  @media screen and (min-width: 320px) {
+    margin-top: 24px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: 52px;
