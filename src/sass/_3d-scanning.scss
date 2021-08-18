@@ -12,8 +12,8 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1444px) {
+    max-width: 1444px;
     padding-left: 189px;
     padding-right: 189px;
   }
@@ -253,6 +253,8 @@
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 100px;
+    margin-top: -21px;
+    margin-left: -21px;
   }
 }
 
@@ -280,8 +282,10 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 250px;
+    flex-basis: calc(100% / 4 - 21px);
     height: 298px;
+    margin-top: 21px;
+    margin-left: 21px;
   }
 }
 
@@ -290,7 +294,6 @@
   font-size: 14px;
   line-height: 1.22;
   text-align: center;
-  // padding-left: 20px;
   width: 100%;
   color: #487996;
 
