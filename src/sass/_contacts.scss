@@ -399,3 +399,33 @@ iframe {
         border-radius: 72px;
     }
 }
+
+// скрепка 
+.file {
+    display: none;
+  }
+
+.file-add {
+    position: absolute;
+    cursor: pointer;
+    left: calc(100% - 20%);
+    top: calc(100% - 40%);
+    width: 20px;
+    height: 20px;
+    fill: var(--wallpaper-color);
+    transition: 200ms fill;
+    &:hover,
+    :focus {
+      fill: var(--text-color);
+    }
+  
+    @media screen and (min-width: 768px) {
+      left: 71%;
+      top: 61%;
+    }
+    @media screen and (min-width: 1444px) {
+        left: 83%;
+        top: 78%;
+        
+    }
+  }
