@@ -182,3 +182,26 @@
     display: none;
   }
 }
+.mobile {
+  display: none;
+
+  &.active {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.header-menu {
+  position: relative;
+}
