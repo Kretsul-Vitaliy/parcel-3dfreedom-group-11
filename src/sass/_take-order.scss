@@ -2,7 +2,26 @@
   padding-top: 24px;
   padding-bottom: 100px;
 }
-.container {
+.order-container {
+  // position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1444px) {
+    max-width: 1444px;
+    padding-left: 189px;
+    padding-right: 189px;
+  }
 }
 .take-order__title {
 }
@@ -612,148 +631,111 @@
 // .example-1 .label:hover .title {
 //   color: #000;
 // }
+// лепестки
+@media screen and (min-width: 320px) {
+  // верхний левый
+  .take__box::before {
+    position: absolute;
+    content: '';
+    width: 73.65px;
+    height: 73.65px;
+    left: -29px;
+    top: 17px;
+    z-index: -10;
+    background: white;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 35px 0px;
+    opacity: 0.8;
+  }
+  // верхний правый
 
-//  лепестки
-// @media screen and (min-width: 320px) {
-// верхний левый
-// .take__box::before {
-//   position: absolute;
-//   content: '';
-//   width: 73.65px;
-//   height: 73.65px;
-//   left: -29px;
-//   top: 230px;
-//   z-index: -10;
-//   background: #ffffff;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 35px 0px;
-//   opacity: 0.5;
-// }
-//  верхний правый
-// .modal__form-info::after {
-//   position: absolute;
-//   content: '';
-//   width: 73.65px;
-//   height: 73.65px;
-//   left: 240px;
-//   top: 6px;
-//   z-index: -10;
-//   background: #ffffff;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 25px 0px;
-//   transform: rotate(90deg);
-//   opacity: 0.5;
-// }
-//  верхний левый второй
-// .modal__form-info::after {
-//   position: absolute;
-//   content: '';
-//   width: 73.65px;
-//   height: 73.65px;
-//   left: 240px;
-//   top: 106px;
-//   z-index: -10;
-//   background: #ffffff;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 25px 0px;
-//   opacity: 0.5;
-// }
-//правій второй
-// .take__box::after {
-//   position: absolute;
-//   content: '';
-//   width: 73.65px;
-//   height: 73.65px;
-//   left: 268px;
-//   top: 540px;
-//   background: #ffffff;
-//   z-index: -10;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 72px;
-//   opacity: 0.5;
-// }
-// третий правый
-// .take-order__form::after {
-//   position: absolute;
-//   content: '';
-//   width: 73.65px;
-//   height: 73.65px;
-//   right: -15px;
-//   top: 500px;
-//   z-index: -10;
-//   background: white;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 25px 0px;
-//   rotate: 90deg;
-// }
-// четвертый правый
-// .take-order__form::after {
-//   position: absolute;
-//   content: '';
-//   width: 73.65px;
-//   height: 73.65px;
-//   right: -40px;
-//   top: 865px;
-//   z-index: -10;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 25px;
-// }
-// }
-// @media screen and (min-width: 768px) {
-// .take-order__form::after {
-//   right: -155px;
-//   top: 650px;
-//   background-color: white;
-//   rotate: 180deg;
-// }
-// верхний левый
-//   .take__box::before {
-//     display: none;
-//   }
-//   //  верхний правый
-//   .modal__form-info::after {
-//     display: none;
-//   }
-//   //  верхний левый второй
-//   .modal__form-info::after {
-//     display: none;
-//   }
-//   //правій второй
-//   .take__box::after {
-//     display: none;
-//   }
-//   // третий правый
-//   .take-order__form::after {
-//     display: none;
-//   }
-//   // четвертый правый
-//   .take-order__form::after {
-//     display: none;
-//   }
-// }
-// @media screen and (min-width: 1444px) {
-//   // верхний левый
-//   .take__box::before {
-//     display: none;
-//   }
-//   //  верхний правый
-//   .modal__form-info::after {
-//     display: none;
-//   }
-//   //  верхний левый второй
-//   .modal__form-info::after {
-//     display: none;
-//   }
-//   //правій второй
-//   .take__box::after {
-//     display: none;
-//   }
-//   // третий правый
-//   .take-order__form::after {
-//     display: none;
-//   }
-//   // четвертый правый
-//   .take-order__form::after {
-//     display: none;
-//   }
-// }
+  // верхний левый второй
+
+  // правій второй
+  .take__box::after {
+    position: absolute;
+    content: '';
+    width: 73.65px;
+    height: 73.65px;
+    left: 260px;
+    top: 650px;
+    background: white;
+    z-index: -10;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+    opacity: 0.5;
+  }
+  // третий правый
+  .take-order__form::after {
+    position: absolute;
+    content: '';
+    width: 73.65px;
+    height: 73.65px;
+    right: -15px;
+    top: 500px;
+    z-index: -10;
+    background: white;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    rotate: 90deg;
+  }
+  // четвертый правый
+}
+@media screen and (min-width: 768px) {
+  .take-order__form::after {
+    right: -0px;
+    top: 0px;
+    background-color: white;
+    rotate: 180deg;
+  }
+  // верхний левый
+  .take__box::before {
+    display: none;
+  }
+  //  верхний правый
+  .modal__form-info::after {
+    display: none;
+  }
+  //  верхний левый второй
+  .modal__form-info::after {
+    display: none;
+  }
+  //правій второй
+  .take__box::after {
+    display: none;
+  }
+  // третий правый
+  .take-order__form::after {
+    display: none;
+  }
+  // четвертый правый
+  .take-order__form::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 1444px) {
+  // верхний левый
+  .take__box::before {
+    display: none;
+  }
+  //  верхний правый
+  .modal__form-info::after {
+    display: none;
+  }
+  //  верхний левый второй
+  .modal__form-info::after {
+    display: none;
+  }
+  //правій второй
+  .take__box::after {
+    display: none;
+  }
+  // третий правый
+  .take-order__form::after {
+    display: none;
+  }
+  // четвертый правый
+  .take-order__form::after {
+    display: none;
+  }
+}
