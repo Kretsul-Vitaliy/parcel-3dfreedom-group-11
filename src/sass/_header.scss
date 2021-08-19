@@ -330,7 +330,7 @@
   margin-left: 4px;
   width: 10px;
   height: 4px;
-  fill: var(--main-icon-color);
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 1440px) {
   .burger-btn {
@@ -347,7 +347,7 @@
   font-size: 16px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: var(--text-color);
 }
 .burger-btn {
   background-color: transparent;
@@ -358,7 +358,7 @@
   &__icon {
     width: 32px;
     height: 32px;
-    fill: var(--primary-title-color);
+    fill: var(--title-color);
     @media screen and (min-width: 768px) {
       margin-left: 174px;
     }
@@ -385,7 +385,7 @@
   &__icon {
     width: 24px;
     height: 24px;
-    fill: var(--main-icon-color);
+    fill: var(--accent-color);
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -405,11 +405,10 @@
 
   padding: 8px 10px;
   width: 200px;
-  background-color: var(--primary-background-color);
+  background-color: var(--white-color);
 
-  box-shadow: -10px -10px 20px var(--primary-background-color),
-    10px 10px 20px rgba(72, 121, 150, 0.1), 5px 5px 10px rgba(72, 121, 150, 0.25),
-    -5px -5px 10px var(--primary-background-color);
+  box-shadow: -10px -10px 20px var(--white-color), 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px var(--white-color);
 
   // &::before {
   //   width: 38px;
@@ -440,7 +439,7 @@
   margin-right: 4px;
   width: 14px;
   height: 14px;
-  fill: var(--main-icon-color);
+  fill: var(--accent-color);
   @media screen and (min-width: 1440px) {
     margin-right: 8px;
   }
@@ -453,7 +452,7 @@
   &__icon {
     width: 45px;
     height: 45px;
-    fill: var(--main-icon-color);
+    fill: var(--accent-color);
   }
 }
 
@@ -461,13 +460,13 @@
   padding-top: 11px;
 }
 .lang-site__link {
-  font-family: var(--second-font);
+  font-family: var(--main-font);
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.3;
   letter-spacing: 0.01em;
-  color: #bdbdbd;
+  color: gray;
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -483,7 +482,7 @@
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: var(--text-color);
 }
 .mobile-menu {
   position: fixed;
@@ -536,7 +535,7 @@
 .mobile-menu__close-btn .close-btn__icon {
   width: 22.5px;
   height: 22.5px;
-  fill: var(--primary-title-color);
+  fill: var(--title-color);
   @media screen and (min-width: 768px) {
     width: 25px;
     height: 25px;
@@ -555,35 +554,35 @@
   margin-bottom: 24px;
 }
 .nav-list__link {
-  font-family: var(--main-font);
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
   letter-spacing: 0.01em;
-  color: var(--primary-title-color);
+  color: var(--title-color);
   text-transform: uppercase;
   &:hover,
   &:focus {
-    -webkit-text-stroke: 1px var(--primary-title-color);
-    -webkit-text-fill-color: var(--primary-background-color);
+    -webkit-text-stroke: 1px var(--title-color);
+    -webkit-text-fill-color: var(--white-color);
   }
 }
 .service__link {
-  font-family: var(--main-font);
+  font-family: var(--secondary-font);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.3;
   letter-spacing: 0.01em;
-  color: var(--primary-title-color);
+  color: var(--title-color);
   &:hover,
   &:focus {
-    -webkit-text-stroke: 1px var(--primary-title-color);
-    -webkit-text-fill-color: var(--primary-background-color);
+    -webkit-text-stroke: 1px var(--title-color);
+    -webkit-text-fill-color: var(--white-color);
   }
 }
 .nav-list__link--active {
-  -webkit-text-stroke: 1px var(--primary-title-color);
-  -webkit-text-fill-color: var(--primary-background-color);
+  -webkit-text-stroke: 1px var(--title-color);
+  -webkit-text-fill-color: var(--white-color);
 }
 .service__link {
   position: relative;
@@ -600,6 +599,6 @@
 
     border-bottom-right-radius: 3px;
     border: 1px solid transparent;
-    background-color: var(--primary-title-color);
+    background-color: var(--title-color);
   }
 }

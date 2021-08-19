@@ -91,3 +91,10 @@
     font-size: 18px;
   }
 }
+
+body {
+  font-family: var(--secondary-font);
+
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
