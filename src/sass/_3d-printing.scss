@@ -34,9 +34,8 @@
   position: relative;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  flex-basis: auto;
+  padding-bottom: 24px;
 
   width: 133px;
   height: 158px;
@@ -168,5 +167,111 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 52px;
+  }
+}
+
+/*decoration*/
+
+.printing__section {
+  position: relative;
+}
+
+.printing__title::before {
+  content: '';
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  z-index: -1;
+  left: 8px;
+  top: 129px;
+  background: var(--white-color);
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 35px 0px;
+
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    left: 13px;
+    top: 129px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.printing__container::after {
+  content: '';
+  position: absolute;
+  width: 73px;
+  height: 63px;
+  top: 0px;
+  right: 13px;
+  z-index: -1;
+  background: var (--white-color);
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 35px 0px 0px;
+  transform: rotate(180deg);
+
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    right: 13px;
+    top: 0px;
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
+  }
+}
+
+.printing-features__section {
+  position: relative;
+}
+
+.printing-features__title::before {
+  content: '';
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  right: 4px;
+  top: 974px;
+  z-index: -1;
+
+  background: var(--white-color);
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    right: 109px;
+    top: 520px;
+
+    background: var(--white-color);
+    border-radius: 72px;
+  }
+}
+
+.printing-features__container::after {
+  content: '';
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: 686px;
+  top: 677px;
+  z-index: -1;
+
+  background: var(--white-color);
+
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+    left: 1319px;
+    top: 0px;
+    z-index: -1;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px;
+    transform: rotate(0deg);
   }
 }
