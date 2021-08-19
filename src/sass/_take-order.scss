@@ -9,25 +9,29 @@
 .title {
 }
 .take-order__box-img {
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/take-order/take-order-pictures-mbl.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    max-width: 280px;
-    height: 171px;
-    margin-bottom: 16px;
-  }
+  background-image: url(../images/take-order/take-order-pictures-mbl.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 280px;
+  height: 171px;
+  margin-bottom: 16px;
+
   //mobile retina
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/take-order/take-order-pictures-mbl@2x.jpg);
   }
   //Tablet
   @media screen and (min-width: 768px) {
-    min-width: 247px;
-    height: 116px;
+    // width: 247px;
+    // height: 116px;
+
+    // min-width: 247px;
+    // height: 116px;
     margin-right: 20px;
-    background-size: contain;
+    // background-size: 247px 116px;
+    margin-top: 0px;
+    // background-size: contain;
     background-image: url(../images/take-order/take-order-pictures-tbl.jpg);
     //Tablet retina
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -35,11 +39,12 @@
     }
   }
   //Desktop
-  @media screen and (min-width: 1099px) {
-    margin-right: 32px;
+  @media screen and (min-width: 1444px) {
+    // margin-right: 32px;
     min-width: 515px;
     height: 315px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(../images/take-order/take-order-pictures.jpg);
     // padding-top: 200px;
     // padding-bottom: 200px;
@@ -55,11 +60,16 @@
 }
 .take-order__box-flex {
   margin-top: 24px;
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
+
+  display: block;
+
   @media screen and (min-width: 768px) {
     display: flex;
+    // margin-right: 32px;
+  }
+  @media screen and (min-width: 1444px) {
+    display: flex;
+    margin-right: 32px;
   }
 
   // justify-content: space-around;
@@ -74,18 +84,18 @@
   }
 }
 .take-order__text {
-  @include fontStyle(16px, 23px, var(--text-color), 0.06em, 300);
+  @include fontStyle(16px, true, var(--text-color), 0.06em, 300);
   font-family: var(--secondary-font);
   font-style: normal;
   @media screen and (max-width: $tablet) {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 18px;
   }
 }
 .text-second {
-  @include fontStyle(18px, 23px, var(--text-color), 0.06em, 400);
+  @include fontStyle(16px, true, var(--text-color), 0.06em, 400);
   font-family: var(--secondary-font);
   font-style: normal;
 }
@@ -97,10 +107,13 @@
 .take-order__list-item {
   padding-top: 55px;
   //Desktop
-  @media screen and (max-width: 1099px) {
+
+  display: none;
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1444px) {
     display: flex;
   }
 }
@@ -111,7 +124,7 @@
 }
 .take-order__item-one {
   //Desktop
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     height: 144px;
     width: 144px;
     border-radius: 0px 72px 72px 0px;
@@ -126,7 +139,7 @@
 }
 .take-order__item-two {
   //Desktop
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     height: 144px;
     width: 144px;
     border-radius: 72px 0px;
@@ -141,7 +154,7 @@
 }
 .take-order__item-three {
   //Desktop
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     height: 144px;
     width: 144px;
     border-radius: 0px 0px 72px 0px;
@@ -156,13 +169,12 @@
 }
 
 .wrapper-box {
+  padding-top: 50px;
+
   @media screen and (min-width: 768px) {
     padding-top: 50px;
   }
-  @media screen and (max-width: 1099px) {
-    padding-top: 50px;
-  }
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1444px) {
     display: flex;
     flex-wrap: wrap;
     padding-top: 100px;
@@ -186,13 +198,13 @@
 }
 .take-order__form {
   // position: relative;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
+
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     width: 420px;
   }
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1444px) {
     width: 515px;
   }
 }
@@ -203,6 +215,28 @@
 }
 .bar {
 }
+
+.select-wrapper .default_option::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  // transform: translateY(-50%);
+
+  display: block;
+  pointer-events: none;
+  // рисуем треугольник
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 9.5px 0 9.5px;
+  border-color: #2b2b2b transparent transparent transparent;
+}
+
+.select-wrapper.active .default_option::before {
+  transform: rotate(180deg);
+}
+
 .select-wrapper {
   position: relative;
   // стилизация стрелочки
@@ -228,10 +262,10 @@
     border-width: 13px 9.5px 0 9.5px;
     border-color: #2b2b2b transparent transparent transparent;
   }
-  .select-wrapper::after:hover {
-    transform: rotate(150deg) translate(-80px, -40px);
-    border-color: #487996;
-  }
+  // .select-wrapper::after:hover {
+  //   transform: rotate(150deg) translate(-80px, -40px);
+  //   border-color: #487996;
+  // }
 }
 
 .select {
@@ -289,18 +323,19 @@
     align-items: baseline;
     justify-content: space-between;
   }
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1444px) {
     text-align: right;
     display: block;
   }
 }
 .contact__box-img {
   margin-top: 100px;
-  @media screen and (max-width: 768px) {
+
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    // display: block;
     display: none;
-  }
-  @media screen and (min-width: 769px) {
-    display: block;
     width: 437px;
     height: 293px;
   }
@@ -506,7 +541,7 @@
 }
 
 .file {
-  // display: none;
+  display: none;
 }
 
 .file-icon {
@@ -526,6 +561,10 @@
   @media screen and (min-width: 768px) {
     left: 93%;
     top: 71%;
+  }
+  @media screen and (min-width: 1444px) {
+    left: 93%;
+    top: 78%;
   }
 }
 
