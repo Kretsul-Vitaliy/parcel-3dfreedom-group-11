@@ -177,16 +177,18 @@
 }
 
 .printing__title::before {
-  content: '';
-  position: absolute;
-  width: 73px;
-  height: 73px;
-  z-index: -1;
-  left: 8px;
-  top: 129px;
-  background: var(--white-color);
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 35px 0px;
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    z-index: -1;
+    left: 8px;
+    top: 129px;
+    background: var(--white-color);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+  }
 
   @media screen and (min-width: 1444px) {
     width: 144px;
@@ -198,7 +200,9 @@
 }
 
 .printing__container::after {
-  content: '';
+  @media screen and (min-width: 768px) {
+    content: '';
+  }
   position: absolute;
   width: 73px;
   height: 63px;
@@ -225,18 +229,20 @@
 }
 
 .printing-features__title::before {
-  content: '';
-  position: absolute;
-  width: 73.65px;
-  height: 73.65px;
-  right: 4px;
-  top: 974px;
-  z-index: -1;
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    width: 73.65px;
+    height: 73.65px;
+    right: 4px;
+    top: 974px;
+    z-index: -1;
 
-  background: var(--white-color);
+    background: var(--white-color);
 
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 72px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+  }
 
   @media screen and (min-width: 1444px) {
     width: 144px;
@@ -250,19 +256,21 @@
 }
 
 .printing-features__container::after {
-  content: '';
-  position: absolute;
-  width: 73.65px;
-  height: 73.65px;
-  left: 686px;
-  top: 677px;
-  z-index: -1;
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    width: 73.65px;
+    height: 73.65px;
+    left: 686px;
+    top: 677px;
+    z-index: -1;
 
-  background: var(--white-color);
+    background: var(--white-color);
 
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 25px 0px;
-  transform: rotate(90deg);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
 
   @media screen and (min-width: 1444px) {
     width: 144px;
