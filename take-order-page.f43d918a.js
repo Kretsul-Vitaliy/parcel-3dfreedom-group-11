@@ -7,4 +7,4 @@ $(document).ready(function(){$(".default_option").click(function(){$(this).paren
 },{}],"DVOd":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menu"),require("./js/take-select");
 },{"./sass/main.scss":"clu1","./js/menu":"i0CD","./js/take-select":"sAsG"}]},{},["DVOd"], null)
-//# sourceMappingURL=/parcel-3dfreedom-group-11/take-order-page.d715c4b6.js.map
+//# sourceMappingURL=/parcel-3dfreedom-group-11/take-order-page.f43d918a.js.map
