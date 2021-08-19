@@ -1,11 +1,11 @@
 .gallery {
   overflow: hidden;
-  // padding-top: 26px;
-  // padding-bottom: 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
-  @media screen and (min-width: $desktop) {
-    // padding-top: 50px;
-    // padding-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 .gallery__container {
@@ -158,11 +158,11 @@
   }
 }
 .gallery__item {
-  &:not(:last-child) {
-    margin-bottom: 24px;
-  }
   @media screen and (max-width: 767px) {
     min-width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
   @media screen and (min-width: $tablet) {
     margin-left: 18px;
