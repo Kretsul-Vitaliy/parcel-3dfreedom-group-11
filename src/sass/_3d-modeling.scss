@@ -1,4 +1,4 @@
-.modeling-container {
+.modeling-section {
   padding-top: 11px;
   padding-bottom: 76px;
   @media screen and (min-width: 1444px) {
@@ -154,31 +154,7 @@
     }
   }
 }
-.decoration-group-four {
-  position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    width: 73px;
-    height: 73px;
-    z-index: -1;
-    right: -40px;
-    top: -65px;
-    background: var(--white-color);
-    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-    border-radius: 25px 0px;
-    @media screen and (min-width: 768px) and(max-width:1443px) {
-      display: none;
-    }
-    @media screen and (min-width: 1444px) {
-      width: 144px;
-      height: 144px;
-      top: -46px;
-      right: -215px;
-      border-radius: 72px;
-    }
-  }
-}
+
 .modeling__title {
   margin-bottom: 16px;
   @media screen and (min-width: 1444px) {
@@ -187,10 +163,18 @@
 }
 .modeling-work__title {
   margin-bottom: 16px;
+  margin-top: 52px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1444px) {
+    padding-bottom: 100px;
+  }
 }
 .modeling-foto__title {
   max-width: 280px;
   margin-bottom: 16px;
+  margin-top: 52px;
   @media screen and (min-width: 768px) {
     max-width: 600px;
     margin-bottom: 24px;
@@ -198,6 +182,7 @@
   @media screen and (min-width: 1444px) {
     max-width: 842px;
     margin-bottom: 52px;
+    margin-top: 100px;
   }
 }
 .modeling__text {
@@ -218,23 +203,6 @@
 .hero-text {
   @media screen and (min-width: 1444px) {
     display: flex;
-  }
-}
-
-.modeling {
-  padding-bottom: 52px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 50px;
-  }
-  @media screen and (min-width: 1444px) {
-    padding-bottom: 100px;
-  }
-}
-.modeling-work,
-.modeling-foto {
-  padding-bottom: 52px;
-  @media screen and (min-width: 1444px) {
-    padding-bottom: 100px;
   }
 }
 
@@ -286,6 +254,7 @@
   }
 }
 .modeling-foto__list {
+  margin-bottom: 52px;
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
@@ -294,6 +263,9 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+  @media screen and (min-width:1444px) {
+    margin-bottom: 100px;
   }
 }
 .modeling-foto__item {
