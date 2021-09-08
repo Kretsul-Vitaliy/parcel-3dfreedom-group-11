@@ -415,8 +415,8 @@ iframe {
 .file-add {
   position: absolute;
   cursor: pointer;
-  left: calc(100% - 20%);
-  top: calc(100% - 40%);
+  left: calc(100% - 18%);
+  top: calc(100% - 38%);
   width: 20px;
   height: 20px;
   fill: var(--wallpaper-color);
@@ -427,8 +427,8 @@ iframe {
   }
 
   @media screen and (min-width: 768px) {
-    left: 71%;
-    top: 61%;
+    left: 73%;
+    top: 63%;
   }
   @media screen and (min-width: 1444px) {
     left: 83%;
